@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Run</title>
+    <link rel="icon" type="image/x-icon" href="assets/lives.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&family=Jersey+10&display=swap" rel="stylesheet">
+    <!--creepster-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Example media query for adjusting styles at smaller screen sizes */
+        
+        @media screen and (max-width: 600px) {
+            /* Adjust styles for smaller screens here */
+            body {
+                font-size: 16px;
+                /* Example adjustment for smaller font size */
+            }
+            .pad_x {
+                padding-left: 6px;
+                padding-right: 6px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center; margin-top: 5px;">
+        <h1 class="creepster-regular"><img src="assets/lives.png" alt="error"> &nbsp; Endless Run</h1>
+    </div>
+    <h1>Controls</h1>
+    <div style="text-align: justify; color: #fff; font-size: 20px; padding-bottom: 25px; display: flex;">
+        <p class="pad_x">1. Move right: ➡</p>
+        <p class="pad_x">2. Move left: ⬅ </p>
+        <p class="pad_x">3. Jump: ⬆</p>
+        <p class="pad_x">4. Sit: ⬇</p>
+        <p class="pad_x">5. Roll: Enter key</p>
+    </div>
+
+
+    <canvas id="canvas1" class="jersey-10-regular"></canvas>
+
+    <img id="player" src="assets/player.png" alt="Player">
+    <img id="layer1" src="assets/stage/layer-1.png" alt="error1">
+    <img id="layer2" src="assets/stage/layer-2.png" alt="error2">
+    <img id="layer3" src="assets/stage/layer-3.png" alt="error3">
+    <img id="layer4" src="assets/stage/layer-4.png" alt="error4">
+    <img id="layer5" src="assets/stage/layer-5.png" alt="error5">
+    <img id="enemy_fly" src="assets/enemies/enemy_fly.png" alt="">
+    <img id="enemy_plant" src="assets/enemies/enemy_plant.png" alt="">
+    <img id="enemy_spider_big" src="assets/enemies/enemy_spider_big.png" alt="">
+    <img id="fire" src="assets/particles/fire.png" alt="">
+    <img id="collisionAnimation" src="assets/particles/boom.png" alt="">
+    <img id="lives" src="assets/lives.png" alt="">
+
+
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
